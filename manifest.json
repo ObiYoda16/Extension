@@ -1,0 +1,26 @@
+{
+  "name": "TABOPENINGS",
+  "version": "0.0.0.1",
+  "manifest_version": 3,
+  "description": "A chromium extension to open tabs in order to help analist.",
+  "icons": {
+    "16": "icons/logo.jpg"
+  },
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.ejemplo.com/*"],
+      "js": ["popup/popup.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["images/*.jpeg"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+
+}
