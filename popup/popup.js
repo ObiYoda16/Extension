@@ -1,7 +1,13 @@
 
-const sendMessageId = document.getElementById("sendmessageid");
+
+
+const sendMessageId = document.getElementById("openVirusTotal");
 if (sendMessageId) {
     sendMessageId.onclick = function() {
+
+
+        document.getElementById();
+
         openVirusTotalIp("19.2.2.1")
         // do something
     };
